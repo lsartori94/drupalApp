@@ -1,0 +1,5 @@
+name = "globlog_signature"
+description = "This is a module that includes Globant's Bootcamp (La Plata) custom footer signature"
+core = 7.x
+package = "Globant_bootcamp"
+version = 7.x-1.x
