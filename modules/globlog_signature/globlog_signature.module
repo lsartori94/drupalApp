@@ -18,17 +18,19 @@
         $n4 = "Alejandro";
         $n5 = "Gonzalo";
         $names = $n1.", ".$n2.", ".$n3.", ".$n4.", ".$n5;
-        $image = theme('image', array('path' => './logo-Globant.jpg'));
 
+        $img_url = './logo-Globant.jpg';
         switch ($delta) {
         case 'globlog_signature':
             $block['subject'] = t("Made by");
             $block['content'] = array(
                 '#markup' => t($names),
                 '#prefix' => '<div>',
-                '#suffix' => '<br/>Powered by</div>'.$image
+                '#suffix' => '<br/>Powered by Globant®'
+                //<img src="<?php $img_url >"</img></div>'
             );
             break;
         }
+
         return $block;
     }
