@@ -1,0 +1,36 @@
+<?php
+
+    function globlog_signature_block_info()
+    {
+        $blocks['globlog_signature'] = array(
+            'info' => t('Signatures')
+        );
+
+        return $blocks;
+    }
+
+    function globlog_signature_block_view($delta = '') {
+        // This example is adapted from node.module.
+        $block = array();
+        $n1 = "Luca Sartori";
+        $n2 = "Federico Crespo";
+        $n3 = "Ezequiel";
+        $n4 = "Alejandro";
+        $n5 = "Gonzalo";
+        $names = $n1.", ".$n2.", ".$n3.", ".$n4.", ".$n5;
+
+        $img_url = './logo-Globant.jpg';
+        switch ($delta) {
+        case 'globlog_signature':
+            $block['subject'] = t("Made by");
+            $block['content'] = array(
+                '#markup' => t($names),
+                '#prefix' => '<div>',
+                '#suffix' => '<br/>Powered by Globant®'
+                //<img src="<?php $img_url >"</img></div>'
+            );
+            break;
+        }
+
+        return $block;
+    }
