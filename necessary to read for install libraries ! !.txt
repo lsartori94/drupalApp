@@ -1,0 +1,6 @@
+to install libraries module:
+-This module introduces a common repository for libraries, so you need to create the "libraries" folder: Create a sites/all/libraries directory on your server.
+-Create a directory within sites/all/libraries named "jquery.cycle"
+-Place the file "jquery.cycle.all.min" inside the "jquery.cycle" directory.
+-Enable the Views slideshow and Views Slideshow: Cycle modules
+
