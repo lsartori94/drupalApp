@@ -1,7 +1,51 @@
+body
+{
+	background:url('/var/www/html/drupal/sites/all/themes/globstrap/bg.png') repeat;
+}
 
-
-aside,header{
+.row
+{
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.4);
 	-moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.4);
 	box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.4);
+}
+
+.page-header
+{
+	margin-top: 20px;
+}
+
+p
+{
+	margin-top:10px;
+	margin-bottom: 10px;
+	font-size: 13pt;
+}
+
+h2, h2 a
+{
+	color: #3A3A3A; /* BLACK */
+}
+
+h2, h2 a:hover
+{
+	color: #CDD520;
+	text-decoration: none;
+}
+
+.btn-primary
+{
+	background-color: #CDD520; /* GREEN GLB */
+	border-color: #CDD520;
+}
+
+a .active: hover
+{
+	color: #fff;
+	background-color: #CDD520;
+}
+
+.form-control:focus
+{
+	border-color:#CDD520;
 }
