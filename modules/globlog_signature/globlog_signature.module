@@ -41,18 +41,21 @@
                                         width:120px;
                                     }
                                 </style>
-
-                                <div id="wrap">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <!--COLUMNA IZQUIERDA-->
                                     <div id="left_col">
                                         Made by</br>
                                         '. $names .'
                                     </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <!--COLUMNA DERECHA-->
                                     <div id="right_col">
                                         Powered by</br>
                                         <img src="'. $img .'
                                         "</img>
                                     </div>
-                                </div><br></br>
+                                </div>
                             </div>',
             );
             break;
