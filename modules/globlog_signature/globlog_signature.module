@@ -13,12 +13,12 @@
         // modified block view
         $block = array();
         // name list
-        $n1 = "Ale";
-        $n2 = "Eze";
-        $n3 = "Fede";
-        $n4 = "Gonza";
-        $n5 = "Luca";
-        $names = $n1.", ".$n2.", ".$n3.", ".$n4.", ".$n5;
+        $n1 = "<li>Ale</li>";
+        $n2 = "<li>Eze</li>";
+        $n3 = "<li>Fede</li>";
+        $n4 = "<li>Gonza</li>";
+        $n5 = "<li>Luca</li>";
+        $names = $n1.$n2.$n3.$n4.$n5;
         $base_path= base_path();
         $img= $base_path . "sites/all/modules/globlog_signature/logo-Globant.png";
 
@@ -45,7 +45,9 @@
                                     <!--COLUMNA IZQUIERDA-->
                                     <div id="left_col">
                                         Made by</br>
+                                        <ul>
                                         '. $names .'
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
