@@ -1,0 +1,9 @@
+Installation
+
+Download and unpack the Libraries module directory in your modules folder (this will usually be "sites/all/modules/").
+Download and unpack the Colorbox module directory in your modules folder (this will usually be "sites/all/modules/").
+Download the Colorbox plugin and unpack in "sites/all/libraries". Make sure the path to the plugin file becomes: "sites/all/libraries/colorbox/jquery.colorbox-min.js". 
+Drush provides a command installing the plugin: 
+% drush colorbox-plugin. 
+The command will download the plugin and unpack it in "sites/all/libraries". It is possible to add another path as an option to the command, but not recommended unless you know what you are doing.
+Go to "Administer" » "Modules" and enable the Colorbox module.
